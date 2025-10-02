@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ChatGPT-like Design System - Clean & Minimal 
+All colors MUST be HSL for consistency and theming.
+*/
+
+@layer base {
+  :root {
+    /* Cosmic energy theme - Deep black with glowing accents */
+    --background: 0 0% 0%;              /* Deep black background */
+    --foreground: 210 40% 98%;          /* Light text */
+    
+    --card: 240 20% 5%;                 /* Very dark surface */
+    --card-foreground: 210 40% 98%;     /* Light text on cards */
+    
+    --popover: 240 20% 5%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 240 27% 14%;             /* Midnight blue */
+    --primary-foreground: 210 40% 98%;
+    --primary-hover: 240 27% 20%;
+    --primary-glow: 199 89% 48%;        /* Icy blue glow */
+    
+    --secondary: 217 42% 16%;           /* Dark blue-gray */
+    --secondary-foreground: 210 40% 98%;
+    --secondary-hover: 217 42% 22%;
+    
+    --muted: 217 42% 16%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 199 89% 48%;              /* Icy blue accent */
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    
+    --border: 217 42% 20%;
+    --input: 217 42% 20%;
+    --ring: 186 77% 53%;                /* Teal glow ring */
+    
+    /* Cosmic gradients with energy glow */
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%), hsl(186 77% 53%));
+    --gradient-secondary: linear-gradient(180deg, hsl(240 20% 5%), hsl(0 0% 0%));
+    
+    /* Glowing shadows */
+    --shadow-soft: 0 2px 8px rgba(14, 165, 233, 0.15);
+    --shadow-medium: 0 4px 16px rgba(34, 211, 238, 0.25);
+    --shadow-strong: 0 8px 32px rgba(34, 211, 238, 0.35);
+    
+    /* Smooth animations */
+    --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    /* Sidebar with cosmic theme */
+    --sidebar-background: 0 0% 0%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 240 27% 14%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 217 42% 16%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 42% 20%;
+    --sidebar-ring: 186 77% 53%;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
